@@ -1,17 +1,3 @@
-/**
- * @return {undefined}
- */
-var pshr_init = function() {
-  setTimeout(function() {
-    registerPush({
-      domain : "//sbscribeme.com",
-      user : "552648880bfd300e0f568985c0d715aa",
-      landId : "0nY9eHW6iVHyXIQ",
-      swName : "pusherSW.js",
-      version : "1.3"
-    });
-  }, +1 || 1);
-};
 (function() {
   if (typeof navigator !== "undefined" && typeof navigator.sendBeacon !== "undefined") {
     /**
