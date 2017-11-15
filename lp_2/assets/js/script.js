@@ -4,5 +4,5 @@ if ("vibrate" in navigator) {
 }
 
 function goto() {
-  location.href = "http://you.goouturl.com/click"
+  location.href = "http://www.example.com"
 }
