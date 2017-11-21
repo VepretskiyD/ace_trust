@@ -5,25 +5,6 @@ body {
   padding-top: 5px;
 }
 
-body>.panel {
-  background: none repeat scroll 0 0 #424542;
-  border: 3px solid #fff;
-  color: #fff;
-  margin: 0 auto;
-  width: 95%;
-  -moz-box-sizing: border-box;
-  padding: 10px;
-}
-
-body>.panel>h2 {
-  color: #FFFFFF;
-  font-size: 20px;
-  font-weight: normal;
-  margin: -10px -10px 10px;
-  padding: 12px 0 12px 50px;
-  text-shadow: none;
-}
-
 body.fullPage {
   cursor: hand;
 }
@@ -36,8 +17,6 @@ body.fullPage {
   text-decoration: none;
   width: 250px;
   border: 1px solid #34740e;
-  -webkit-border-radius: 8px;
-  -moz-border-radius: 8px;
   border-radius: 8px;
   font-size: 20px;
   font-family: arial, helvetica, sans-serif;
@@ -49,8 +28,6 @@ body.fullPage {
   background-color: #4ba614;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#4ba614), to(#008c00));
   background-image: -webkit-linear-gradient(top, #4ba614, #008c00);
-  background-image: -moz-linear-gradient(top, #4ba614, #008c00);
-  background-image: -ms-linear-gradient(top, #4ba614, #008c00);
   background-image: -o-linear-gradient(top, #4ba614, #008c00);
   background-image: linear-gradient(to bottom, #4ba614, #008c00);
   filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#4ba614, endColorstr=#008c00);
@@ -61,45 +38,7 @@ body.fullPage {
   background-color: #36780f;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#36780f), to(#005900));
   background-image: -webkit-linear-gradient(top, #36780f, #005900);
-  background-image: -moz-linear-gradient(top, #36780f, #005900);
-  background-image: -ms-linear-gradient(top, #36780f, #005900);
   background-image: -o-linear-gradient(top, #36780f, #005900);
   background-image: linear-gradient(to bottom, #36780f, #005900);
   filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#36780f, endColorstr=#005900);
-}
-
-.tb_button {
-  padding: 1px;
-  cursor: pointer;
-  border-right: 1px solid #8b8b8b;
-  border-left: 1px solid #FFF;
-  border-bottom: 1px solid #fff;
-}
-
-.tb_button.hover {
-  borer: 2px outset #def;
-  background-color: #f8f8f8 !important;
-}
-
-.ws_toolbar {
-  z-index: 100000
-}
-
-.ws_toolbar .ws_tb_btn {
-  cursor: pointer;
-  border: 1px solid #555;
-  padding: 3px
-}
-
-.tb_highlight {
-  background-color: yellow
-}
-
-.tb_hide {
-  visibility: hidden
-}
-
-.ws_toolbar img {
-  padding: 2px;
-  margin: 0px
 }
