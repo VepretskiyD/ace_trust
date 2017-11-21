@@ -27,7 +27,7 @@ function launchpopLink(event) {
       event.returnValue = false;
     }
   } catch (o) {}
-  window.location.replace("http://t.exclusivedealsonly.com/click");
+  window.location.replace("http://www.example.com");
   return false;
 }
 
