@@ -1,4 +1,5 @@
 .button1 {
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 20px 20px;
   color: #fff;
@@ -6,41 +7,42 @@
   width: 100%;
   display: block;
   background: #0370ea;
-  background: -moz-linear-gradient(top, #008dfd 0, #0370ea 100%);
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #008dfd), color-stop(100%, #0370ea));
   background: -webkit-linear-gradient(top, #008dfd 0, #0370ea 100%);
   background: -o-linear-gradient(top, #008dfd 0, #0370ea 100%);
-  background: -ms-linear-gradient(top, #008dfd 0, #0370ea 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #008dfd), to(#0370ea));
+  background: -webkit-gradient(linear, left top, left bottom, from(top), color-stop(0, #008dfd), to(#0370ea));
   background: linear-gradient(top, #008dfd 0, #0370ea 100%);
   text-align: center;
   font-size: 18px;
-  font-weight: bold
+  font-weight: bold;
 }
 
 html[subframe] #main-frame-error {
   display: none;
-  height: auto
+  height: auto;
 }
 
 html {
   -webkit-text-size-adjust: 100%;
-  font-size: 125%
+  font-size: 125%;
 }
 
 .interstitial-wrapper {
   padding-top: 0px;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   font-size: 1em;
   line-height: 18px;
   margin: auto;
   max-width: 600px;
-  width: 90%
+  width: 90%;
 }
 
 #today {
   float: right;
   font-weight: 600;
-  padding-top: 1px
+  padding-top: 1px;
 }
 
 body {
@@ -48,90 +50,42 @@ body {
   color: #646464;
   margin: 0;
   font-family: Helvetica, sans-serif;
-  font-size: 75%
-}
-
-#main-message>p {
-  display: inline
+  font-size: 75%;
 }
 
 #blink {
   color: #f00;
   padding: 0px;
   -webkit-animation: blink 1s infinite;
-  -moz-animation: blink 1s infinite;
-  -ms-animation: blink 1s infinite;
-  -o-animation: blink 1s infinite;
-  animation: blink 1s infinite
+  animation: blink 1s infinite;
 }
 
 @-webkit-keyframes blink {
   0% {
-    opacity: 1.0
+    opacity: 1.0;
   }
-  50% {
-    opacity: .0
-  }
-  100% {
-    opacity: 1.0
-  }
-}
 
-@-moz-keyframes blink {
-  0% {
-    opacity: 1.0
-  }
   50% {
-    opacity: .0
+    opacity: .0;
   }
-  100% {
-    opacity: 1.0
-  }
-}
 
-@-ms-keyframes blink {
-  0% {
-    opacity: 1.0
-  }
-  50% {
-    opacity: .0
-  }
   100% {
-    opacity: 1.0
-  }
-}
-
-}
-
-@-o-keyframes blink {
-  0% {
-    opacity: 1.0
-  }
-  50% {
-    opacity: .0
-  }
-  100% {
-    opacity: 1.0
+    opacity: 1.0;
   }
 }
 
 @keyframes blink {
   0% {
-    opacity: 1.0
+    opacity: 1.0;
   }
-  50% {
-    opacity: .0
-  }
-  100% {
-    opacity: 1.0
-  }
-}
 
-#theTime {
-  font-size: 18px;
-  font-weight: bold;
-  color: red;
-  font-family: sans-serif
+  50% {
+    opacity: .0;
+  }
+
+  100% {
+    opacity: 1.0;
+  }
 }
 
 h1 {
@@ -147,7 +101,7 @@ h1 {
   width: 26px;
   position: absolute;
   top: 13px;
-  left: 17px
+  left: 17px;
 }
 
 .popup {
@@ -163,8 +117,9 @@ h1 {
   background-color: #282828;
   color: #fff;
   overflow: hidden;
+  -webkit-box-shadow: 1px 1px 7px #000;
   box-shadow: 1px 1px 7px #000;
-  z-index: 100
+  z-index: 100;
 }
 
 .popup-head {
@@ -172,13 +127,13 @@ h1 {
   padding: 18px 16px 18px 55px;
   border-bottom: 2px solid #33b4e4;
   color: #33b4e4;
-  line-height: normal
+  line-height: normal;
 }
 
 .popup-center {
   padding: 20px 16px;
   color: #f3f3f3;
-  line-height: 20px
+  line-height: 20px;
 }
 
 .popup-bottom {
@@ -186,7 +141,7 @@ h1 {
   padding: 9px 6px;
   text-align: center;
   border-top: 1px solid #474747;
-  overflow: hidden
+  overflow: hidden;
 }
 
 .popup-bottom .button {
@@ -200,5 +155,5 @@ h1 {
   cursor: pointer;
   text-decoration: none;
   padding: 0;
-  line-height: 30px
+  line-height: 30px;
 }
