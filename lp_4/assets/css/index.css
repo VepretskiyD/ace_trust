@@ -1,13 +1,12 @@
-#timer p,p {
+#timer p, p {
   color: rgb(85, 85, 85);
 }
 
 #timer {
-  display: inline-block;
-  float: left;
+  text-align: center;
 }
 
-#timer p,.btn {
+#timer p, .btn {
   font-weight: 700;
 }
 
@@ -19,29 +18,21 @@ a {
   text-decoration: none;
 }
 
-footer,header,section {
-  clear: both;
-}
-
 * {
   margin: 0px;
   padding: 0px;
 }
 
 #wrapper {
-  max-width: 400px;
-  border: 0px solid rgb(48, 48, 48);
-  border-radius: 0px;
+  max-width: 700px;
+  border: 0 solid rgb(48, 48, 48);
+  border-radius: 0;
+  margin: 0 auto;
 }
 
 p {
   font-size: 14px;
   padding: 5px 0px;
-}
-
-#timer {
-  max-width: 290px;
-  width: 65%;
 }
 
 #timer p {
@@ -59,8 +50,7 @@ p {
 }
 
 .container {
-  padding-left: 8px;
-  padding-right: 8px;
+  padding: 8px;
 }
 
 #blink {
@@ -74,12 +64,34 @@ p {
   0% {
     opacity: 1.0;
   }
-
   50% {
     opacity: .0;
   }
-
   100% {
     opacity: 1.0;
+  }
+}
+
+.footer-fixed {
+  width: 100%;
+  background: rgba(255, 255, 255, .9);
+}
+
+@media all and (max-height:600px) {
+  .footer-fixed {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+  body {
+    margin-bottom: 100px;
+  }
+}
+
+@media all and (max-height:600px) and (orientation: landscape) {
+  .header {
+    float: right;
+    margin-left: 5px;
   }
 }
