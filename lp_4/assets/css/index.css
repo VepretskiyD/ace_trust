@@ -1,13 +1,13 @@
-#timer p, p {
+#timer p,p {
   color: rgb(85, 85, 85);
 }
 
-#error, #timer {
+#timer {
   display: inline-block;
   float: left;
 }
 
-#timer p, .btn {
+#timer p,.btn {
   font-weight: 700;
 }
 
@@ -19,7 +19,7 @@ a {
   text-decoration: none;
 }
 
-footer, header, section {
+footer,header,section {
   clear: both;
 }
 
@@ -67,74 +67,19 @@ p {
   color: #ff0000;
   padding: 6px;
   -webkit-animation: blink 1s infinite;
-  -moz-animation: blink 1s infinite;
-  -ms-animation: blink 1s infinite;
-  -o-animation: blink 1s infinite;
-  animation: blink 1s infinite
+  animation: blink 1s infinite;
 }
 
 @-webkit-keyframes blink {
   0% {
-    opacity: 1.0
+    opacity: 1.0;
   }
+
   50% {
-    opacity: .0
+    opacity: .0;
   }
+
   100% {
-    opacity: 1.0
+    opacity: 1.0;
   }
 }
-
-@-moz-keyframes blink {
-  0% {
-    opacity: 1.0
-  }
-  50% {
-    opacity: .0
-  }
-  100% {
-    opacity: 1.0
-  }
-}
-
-}
-
-@-ms-keyframes blink {
-  0% {
-    opacity: 1.0
-  }
-  50% {
-    opacity: .0
-  }
-  100% {
-    opacity: 1.0
-  }
-}
-
-@-o-keyframes blink {
-  0% {
-    opacity: 1.0
-  }
-  50% {
-    opacity: .0
-  }
-  100% {
-    opacity: 1.0
-  }
-}
-
-@keyframes blink {
-  0% {
-    opacity: 1.0
-  }
-  50% {
-    opacity: .0
-  }
-  100% {
-    opacity: 1.0
-  }
-  #today {
-    float: right;
-    font-weight: 600;
-    padding-top: 15px
-  }
