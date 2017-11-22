@@ -4,9 +4,7 @@ body {
   background-color: rgb(206, 52, 38);
 }
 
-a,
-a:visited,
-a:hover {
+a,a:visited,a:hover {
   color: rgb(255, 255, 255);
 }
 
@@ -45,9 +43,7 @@ input {
   text-align: center;
 }
 
-.button a,
-.button a:visited,
-.button a:hover {
+.button a,.button a:visited,.button a:hover {
   display: block;
   background-color: rgb(212, 82, 70);
   color: rgb(255, 255, 255);
